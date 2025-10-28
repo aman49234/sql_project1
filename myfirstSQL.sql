@@ -26,9 +26,8 @@ SELECT
     COUNT(*) 
 FROM retail_sales;
 
-SELECT COUNT(DISTINCT transaction_id) FROM retail_sales;
-CREATE UNIQUE INDEX idx_transaction_id
-ON retail_sales (transaction_id);
+-- Data cleaning
+
 
 SELECT * FROM retail_sales
 WHERE 
